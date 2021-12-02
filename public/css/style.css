@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&family=Teko:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+.carousel .carousel-item img{
+    height: 45vh;
+    border-radius: 50px;
+}
+.main_content .left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.left-side h3{
+    font-size: 50px;
+    letter-spacing: 4px;
+}
+.left-side h3{
+    font-size: 30px;
+    font-family: 'Teko', sans-serif;
+    color: #f44336;
+}
+.left-side h5{
+    color: rgba(0, 0, 0, 0.87);
+    letter-spacing: 3px;
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+}
+.fa-star-of-life{
+    animation: rot 2s linear infinite;
+}
+.main_content{
+    padding: 50px !important;
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* Weather Page Css */
+.main_content .searchBar form{
+    background-color: #0b0b30;
+    border-radius: 2rem;
+    padding: 10px;
+}
+.searchBar form #cityName{
+    border: none;
+    background-color: transparent;
+    padding: 5.5px;
+    color: #fff;
+    border-radius: 2rem;
+    width: 45rem;
+    font-weight: 500;
+}
+.searchBar form{
+    display: flex;
+    justify-content: space-between;
+}
+.searchBar form #cityName::placeholder{
+    color: #fff;
+}
+.searchBar form #sbtbtn{
+    border-radius: 1rem;
+    background-color: rgb(22, 129, 230);
+    color: rgb(255, 255, 255);
+    padding: 5.5px;
+    border: none;
+    width: 10rem;
+}
+.OutputBar{
+    background-color: #15152a;
+    border-radius: 10px;
+    padding: 5px;
+}
+.OutputBar .top_layer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #121224;
+    padding: 15px;
+    color: #fff;
+}
+.OutputBar .top_layer p{
+    margin: 0 !important;
+}
+.OutputBar .bottom_layer .temp{
+    display: flex;
+    visibility: hidden;
+}
+.bottom_layer p{
+    padding: 10px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.bottom_layer div span,i{
+    font-size: 50px;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 5px;
+}
+.visibleTemp{
+    visibility: visible !important;
+}
+.fa-sun{
+    color: rgb(195, 195, 26);
+}
+.spanHide{
+    display: none;
+}
+@media screen and (min-width: 480px) {
+    .main_content {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-40%);
+    }
+  }
